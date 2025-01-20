@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Program | Cinema World</title>
+  <link rel="stylesheet" href="css/styles-program.css">
+  <link rel="icon" href="assets/images/logo.webp" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script src="js/program_script.js"></script>
+  <script src="js/slideshow.js" defer></script>
+</head>
+<body class="dark-theme">
+  
+<!-- HEADER (Navigation Bar) -->
+<header>
+  <div class="header-top container">
+    <div class="nav-logo">
+      <a href="index.html">
+        <img
+          src="assets/images/logo.webp"
+          alt="Cinema World Logo"
+          class="logo-img"
+        />
+      </a>
+      <h1 class="brand-text">Cinema World</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="program.html" class="active">Movie Program</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main>
+  <!-- SLIDESHOW SECTION -->
+  <section class="slideshow-section">
+    <div class="container slideshow-container">
+      <h2 class="futuristic-heading">
+        <i class="fa-solid fa-video"></i>
+        Now Showing
+        <i class="fa-solid fa-video fa-flip-horizontal"></i>
+      </h2>
+
+      <!-- Slideshow Wrapper -->
+      <div class="slideshow-wrapper">
+        <!-- Slide 1 -->
+        <div class="slide">
+          <img src="assets/images/spider-man-no-way-home-slide.webp" alt="Spider-Man: No Way Home" />
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide">
+          <img src="assets/images/slide-Avatar_Way_of_Water.jpg" alt="Avatar The Way of Water" />
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide">
+          <img src="assets/images/slide-batman.avif" alt="The Batman" />
+        </div>
+        <!-- Slide 4 -->
+        <div class="slide">
+          <img src="assets/images/slide-shrek-forever.jpg" alt="Shrek Forever After" />
+        </div>
+        <!-- Slide 5 -->
+        <div class="slide">
+          <img src="assets/images/slide-dr-strange.webp" alt="Dr.Strange In the Multiverse of Madness" />
+        </div>
+        <!-- Slide 6 -->
+        <div class="slide">
+          <img src="assets/images/slide-ice-age.jpg" alt="Ice Age 3" />
+        </div>
+        <!-- Slide 7 -->
+        <div class="slide">
+          <img src="assets/images/slide-black-panther.jpg" alt="Black Panther: Wakanda Forever" />
+        </div>
+        <!-- Slide 8 -->
+        <div class="slide">
+          <img src="assets/images/slide-jurassic-world.jpg" alt="Jurassic World: Dominion" />
+        </div>
+        <!-- Slide 9 -->
+        <div class="slide">
+          <img src="assets/images/slide-minions.avif" alt="Minions Rise of Gru" />
+        </div>
+        <!-- Slide 10 -->
+        <div class="slide">
+          <img src="assets/images/slide-mariobros.jpg" alt="Super Mario Bros" />
+        </div>
+        <!-- Slide 11 -->
+        <div class="slide">
+          <img src="assets/images/slide-top-gun.jpg" alt="Top Gun Maverick" />
+        </div>
+      </div>
+
+      <!-- Slideshow controls -->
+      <button class="slideshow-prev"><i class="fa-solid fa-backward"></i></button>
+      <button class="slideshow-next"><i class="fa-solid fa-forward"></i></button>
+    </div>
+  </section>
+
+  <!-- MOVIE PROGRAM SECTION -->
+  <section class="movie-program">
+    <div class="container">
+      <h2 class="futuristic-heading">
+        <i class="fa-solid fa-film"></i>
+        Movie Program
+        <i class="fa-solid fa-film fa-flip-horizontal"></i>
+      </h2>
+
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="search" placeholder="Search for movies..." />
+      </div>
+
+      <!-- MOVIE PROGRAM TABLE -->
+      <a href="reservation.html">
+        <table class="program-table">
+          <thead>
+            <tr>
+              <th>Movie</th>
+              <th>Poster</th>
+              <th>Mon (15.01)</th>
+              <th>Tue (16.01)</th>
+              <th>Wed (17.01)</th>
+              <th>Thu (18.01)</th>
+              <th>Fri (19.01)</th>
+              <th>Sat (20.01)</th>
+              <th>Sun (21.01)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- 1) Avatar: The Way of Water -->
+            <tr>
+              <td>Avatar: The Way of Water</td>
+              <td class="poster-cell">
+                <img src="assets/images/avatar.jpeg" alt="Avatar Poster" />
+              </td>
+              <td>12:00, 15:30, 18:00</td>
+              <td>13:00, 16:30, 19:00</td>
+              <td>14:00, 17:30, 20:00</td>
+              <td>12:30, 16:00, 19:30</td>
+              <td>15:00, 18:30, 21:00</td>
+              <td>15:30, 19:00, 21:30</td>
+              <td>14:15, 17:45, 20:15</td>
+            </tr>
+            <!-- 2) The Batman -->
+            <tr>
+              <td>The Batman</td>
+              <td class="poster-cell">
+                <img src="assets/images/batman.jpg" alt="Batman Poster" />
+              </td>
+              <td>11:00, 14:30, 17:45</td>
+              <td>12:00, 15:30, 19:00</td>
+              <td>13:30, 17:00, 20:30</td>
+              <td>11:30, 14:00, 18:00</td>
+              <td>13:00, 16:30, 20:00</td>
+              <td>14:30, 18:00, 21:00</td>
+              <td>12:15, 15:45, 19:15</td>
+            </tr>
+            <!-- 3) Spider-Man: No Way Home -->
+            <tr>
+              <td>Spider-Man: No Way Home</td>
+              <td class="poster-cell">
+                <img src="assets/images/Spider-Man.webp" alt="Spider-Man Poster" />
+              </td>
+              <td>12:00, 16:00, 19:00</td>
+              <td>13:00, 17:00, 20:00</td>
+              <td>14:00, 18:00, 21:00</td>
+              <td>11:45, 15:30, 19:00</td>
+              <td>12:30, 16:30, 20:30</td>
+              <td>13:45, 17:45, 21:15</td>
+              <td>14:15, 17:45, 21:15</td>
+            </tr>
+            <!-- 4) Minions: The Rise of Gru -->
+            <tr>
+              <td>Minions: The Rise of Gru</td>
+              <td class="poster-cell">
+                <img src="assets/images/minions_rise_of_gru.jpg" alt="Minions Poster" />
+              </td>
+              <td>09:30, 12:00, 14:30</td>
+              <td>10:00, 13:00, 15:00</td>
+              <td>09:45, 12:15, 14:45</td>
+              <td>10:30, 13:30, 16:30</td>
+              <td>11:00, 14:00, 17:00</td>
+              <td>11:30, 14:30, 17:30</td>
+              <td>10:15, 13:15, 16:15</td>
+            </tr>
+            <!-- 5) Black Panther: Wakanda Forever -->
+            <tr>
+              <td>Black Panther: Wakanda Forever</td>
+              <td class="poster-cell">
+                <img src="assets/images/black_panther.jpg" alt="Black Panther Poster" />
+              </td>
+              <td>11:00, 14:30, 18:00</td>
+              <td>12:00, 15:30, 19:00</td>
+              <td>13:30, 17:00, 20:30</td>
+              <td>11:30, 15:00, 19:30</td>
+              <td>13:30, 16:45, 20:15</td>
+              <td>14:00, 17:30, 21:00</td>
+              <td>12:30, 16:00, 19:45</td>
+            </tr>
+            <!-- 6) Top Gun: Maverick -->
+            <tr>
+              <td>Top Gun: Maverick</td>
+              <td class="poster-cell">
+                <img src="assets/images/topgun.jpg" alt="Top Gun Poster" />
+              </td>
+              <td>12:30, 15:45, 19:00</td>
+              <td>13:45, 17:15, 20:15</td>
+              <td>14:15, 18:30, 21:30</td>
+              <td>11:30, 14:45, 18:45</td>
+              <td>13:00, 16:30, 19:30</td>
+              <td>14:45, 17:45, 20:45</td>
+              <td>12:00, 15:30, 19:00</td>
+            </tr>
+            <!-- 7) The Super Mario Bros. Movie -->
+            <tr>
+              <td>The Super Mario Bros. Movie</td>
+              <td class="poster-cell">
+                <img src="assets/images/supermario.jpg" alt="Mario Poster" />
+              </td>
+              <td>10:00, 13:15, 16:30</td>
+              <td>11:15, 14:30, 17:45</td>
+              <td>09:45, 12:45, 15:45</td>
+              <td>10:30, 13:30, 16:30</td>
+              <td>11:00, 14:00, 17:00</td>
+              <td>11:30, 14:30, 17:30</td>
+              <td>10:15, 13:15, 16:15</td>
+            </tr>
+            <!-- 8) Doctor Strange in the Multiverse of Madness -->
+            <tr>
+              <td>Doctor Strange in the Multiverse of Madness</td>
+              <td class="poster-cell">
+                <img src="assets/images/strange.jpg" alt="Dr. Strange Poster" />
+              </td>
+              <td>12:30, 15:30, 18:30</td>
+              <td>13:30, 16:30, 19:30</td>
+              <td>14:00, 17:00, 20:00</td>
+              <td>12:00, 15:00, 18:00</td>
+              <td>13:45, 16:45, 20:45</td>
+              <td>11:45, 15:15, 18:45</td>
+              <td>14:15, 17:45, 21:15</td>
+            </tr>
+            <!-- 9) Jurassic World: Dominion -->
+            <tr>
+              <td>Jurassic World: Dominion</td>
+              <td class="poster-cell">
+                <img src="assets/images/Jurassic_world.jpg" alt="Jurassic Poster" />
+              </td>
+              <td>10:00, 13:00, 16:00</td>
+              <td>11:00, 14:00, 17:00</td>
+              <td>12:00, 15:00, 18:00</td>
+              <td>13:30, 16:30, 19:30</td>
+              <td>11:15, 14:15, 17:15</td>
+              <td>12:45, 15:45, 18:45</td>
+              <td>14:00, 17:30, 20:30</td>
+            </tr>
+            <!-- 10) Shrek Forever After -->
+            <tr>
+              <td>Shrek Forever After</td>
+              <td class="poster-cell">
+                <img src="assets/images/shrek-forever.jpg" alt="Shrek Poster" />
+              </td>
+              <td>09:30, 12:00, 14:30</td>
+              <td>10:00, 13:00, 15:00</td>
+              <td>09:45, 12:15, 14:45</td>
+              <td>10:30, 13:30, 16:30</td>
+              <td>11:00, 14:00, 17:00</td>
+              <td>11:30, 14:30, 17:30</td>
+              <td>10:15, 13:15, 16:15</td>
+            </tr>
+            <!-- 11) Ice Age 3 -->
+            <tr>
+              <td>Ice Age 3</td>
+              <td class="poster-cell">
+                <img src="assets/images/ice-age-dawn-of-the-dinosaurs.jpg" alt="Ice Age Poster" />
+              </td>
+              <td>09:30, 12:00, 15:00</td>
+              <td>10:30, 13:30, 16:30</td>
+              <td>09:45, 12:45, 15:45</td>
+              <td>11:00, 14:00, 17:00</td>
+              <td>10:00, 13:00, 16:00</td>
+              <td>11:15, 14:15, 17:15</td>
+              <td>12:30, 15:30, 18:30</td>
+            </tr>
+          </tbody>
+        </table>
+      </a>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Cinema World. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

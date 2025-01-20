@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Cinema World</title>
+  <link rel="icon" href="assets/images/logo.webp" type="image/x-icon"/>
+  <link rel="stylesheet" href="css/style-about.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body class="dark-theme">
+
+<!-- HEADER (Navigation Bar) -->
+<header>
+  <div class="header-top container">
+    <div class="nav-logo">
+      <a href="index.html"><img
+        src="assets/images/logo.webp"
+        alt="Cinema World Logo"
+        class="logo-img"
+      /></a>
+      <h1 class="brand-text">Cinema World</h1>
+    </div>
+
+    <!-- NAVIGATION MENU -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="program.html">Movie Program</a></li>
+        <li><a href="reservation.html">Reservation</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO SECTION for About Page -->
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>About Cinema World</h1>
+    <p>Get to know more about our history, services, and the movies we showcase.</p>
+  </div>
+  <a href="#movie-posts" class="btn latest-movies-btn">Latest Movies</a>
+  <a href="#location-here" class="btn find-us-btn">Find Us</a>
+  <a href="#who-we-are" class="btn who-we-are-btn">Who We Are</a>
+</section>
+
+<!-- MAIN CONTENT -->
+<main>
+  <!-- ABOUT SECTION -->
+  <section class="cinema-info" id="who-we-are">
+    <div class="container">
+      <h2 class="futuristic-heading"><i class="fa-solid fa-circle-info"></i>Who We Are</h2>
+      <p class="location-p-text">
+        Cinema World is a modern entertainment hub featuring a blend of state-of-the-art 
+        projection and sound technologies, along with a cozy atmosphere. Our cinema is 
+        proudly located in Plovdiv, bul. Bulgaria 236, bringing big-screen experiences 
+        to local movie fans and visitors alike.
+      </p>
+
+      <!-- CINEMA PHOTOS TO WHO WE ARE -->
+      <div class="about-gallery">
+        <img src="assets/images/tickets-stand.webp" alt="Cinema ticket stand photo" width="550" height="350"/>
+        <img src="assets/images/stand-popcorn.jpg" alt="Concession stand" width="550" height="350"/>
+        <img src="assets/images/luxury-cinema-interior-stockcake.webp" alt="Inside the movie hall" width="550" height="350"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOVIES WE SHOW SECTION -->
+  <section class="cinema-info" id="movie-posts">
+    <div class="container">
+      <h2 class="futuristic-heading"><i class="fa-solid fa-film"></i>Latest Movies We Show<i class="fa-solid fa-film"></i></h2>
+      <p class="location-p-text">
+        From Hollywood blockbusters and indie gems to foreign classics and local festivals—Cinema World 
+        curates an eclectic program all year round. Our screens light up with the latest action, comedy, 
+        drama, horror, animated, and family-friendly hits, ensuring there's something for everyone.
+      </p>
+      <!-- LATEST MOVIES PICTURES -->
+      <div class="about-gallery-two about-gallery-poster">
+        <a href="reservation.html"><img src="assets/images/batman.jpg" alt="Batman" /></a>
+        <a href="reservation.html"><img src="assets/images/Spider-Man.webp" alt="Spider-Man" /></a>
+        <a href="reservation.html"><img src="assets/images/avatar.jpeg" alt="Avatar" /></a>
+      </div>
+    </div>
+    <!-- ONLY TO SHOW THE CORRECT PART OF THE LOCATION SECTION -->
+    <div id="location-here"></div>
+  </section>
+
+  <!-- LOCATION & MAP SECTION -->
+  <section class="cinema-info">
+    <div class="container">
+      <h2 class="futuristic-heading"><i class="fa-solid fa-location-dot"></i>Our Location</h2>
+      <p class="location-p-text">
+        We are located at <strong>Plovdiv, bul. Bulgaria 236</strong>. Enjoy easy 
+        access by car or public transportation, with a convenient parking lot 
+        in front of the Faculty of Mathematics and Informatics, plus bus stops 
+        for lines <strong>44, 222, 20, and 18</strong> — leading you right to our door.
+      </p>
+
+      <!-- Google Map iframe -->
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe
+            class="gmap_iframe"
+            width="100%"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=булевард. България 236&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Cinema World. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

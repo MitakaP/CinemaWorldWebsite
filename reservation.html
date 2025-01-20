@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reservation | Cinema World</title>
+  <link rel="stylesheet" href="css/style-reservation.css" />
+  <link rel="icon" href="assets/images/logo.webp">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <script src="js/reservation_script.js" defer></script>
+</head>
+<body class="dark-theme">
+
+<!-- HEADER (Navigation Bar) -->
+<header>
+<div class="header-top container">
+    <div class="nav-logo">
+    <a href="index.html">
+        <img
+        src="assets/images/logo.webp"
+        alt="Cinema World Logo"
+        class="logo-img"
+        />
+    </a>
+    <h1 class="brand-text">Cinema World</h1>
+    </div>
+    <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="program.html">Movie Program</a></li>
+        <li><a href="reservation.html" class="active">Reservation</a></li>
+    </ul>
+    </nav>
+</div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main>
+<!-- RESERVATION SECTION with background -->
+<section class="reservation-section">
+    <div class="overlay"></div>
+    <div class="container reservation-container">
+    
+    <h2 class="futuristic-heading"><i class="fa-solid fa-ticket"></i>Make a Reservation<i class="fa-solid fa-ticket"></i></h2>
+    
+    <!-- RESERVATION FORM -->
+    <form id="reservation-form" class="reservation-form" method="POST">
+        <label for="movie"><i class="fa-solid fa-film"></i>Select Movie:</label>
+        <select id="movie" name="movie" required>
+        <option value="">--Select a Movie--</option>
+        <option value="avatar">Avatar: The Way of Water</option>
+        <option value="batman">The Batman</option>
+        <option value="spiderman">Spider-Man: No Way Home</option>
+        <option value="doctor-strange">Doctor Strange in the Multiverse of Madness</option>
+        <option value="top-gun">Top Gun: Maverick</option>
+        <option value="jurassic-world">Jurassic World: Dominion</option>
+        <option value="black-panther">Black Panther: Wakanda Forever</option>
+        <option value="minions">Minions: The Rise of Gru</option>
+        <option value="super-mario">The Super Mario Bros. Movie</option>
+        <option value="shrek-forever">Shrek Forever After</option>
+        <option value="ice-age-3">Ice Age 3</option>
+        </select>
+
+        <label for="date"><i class="fa-solid fa-calendar-days"></i>Select Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="time"><i class="fa-solid fa-clock"></i>Select Time:</label>
+        <select id="time" name="time" required>
+        <option value="">--Select a Time--</option>
+        </select>
+
+        <label for="name"><i class="fa-solid fa-pen"></i>Your Name:</label>
+        <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        placeholder="Enter your full name" 
+        required 
+        />
+
+        <label for="email"><i class="fa-solid fa-envelope"></i>Your Email:</label>
+        <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="Enter your email address" 
+        required 
+        />
+
+        <label for="seats"><i class="fa-solid fa-couch"></i>Number of Seats:</label>
+        <input 
+        type="number" 
+        id="seats" 
+        name="seats" 
+        min="1" 
+        max="10" 
+        required 
+        />
+
+        <button type="submit" class="btn primary-btn"><i class="fa-solid fa-calendar-check"></i>Reserve Now<i class="fa-solid fa-calendar-check"></i></button>
+    </form>
+    </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+<div class="container">
+    <p>&copy; 2025 Cinema World. All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>

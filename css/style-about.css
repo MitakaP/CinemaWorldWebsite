@@ -1,0 +1,487 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Container Utility */
+.container {
+  width: 100%;
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+/* HEADER (Navigation Bar) */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 9999;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.brand-text {
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* NAV MENU */
+.header-top nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.header-top nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.header-top nav ul li a:hover,
+.header-top nav ul li a.active {
+  color: #e50914;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  margin-top: 70px;
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url('../assets/images/outside-building.webp') no-repeat center center;
+  background-size: cover;
+}
+
+.find-us-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  border-radius: 25px;
+  animation: bounce 2s infinite;
+  background: #e50914;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.who-we-are-btn {
+  position: absolute;
+  left: 60%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  border-radius: 25px;
+  animation: bounce 2s infinite;
+  background: #e50914;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.latest-movies-btn {
+  position: absolute; 
+  left: 40%; 
+  bottom: 2rem;
+  transform: translateX(-50%);
+  border-radius: 25px;
+  animation: bounce 2s infinite;
+  background: #e50914;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Base Button styling */
+.hero-content .btn,
+.cinema-info .btn,
+.about-gallery .btn {
+  background: #e50914;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.hero-content .btn:hover,
+.cinema-info .btn:hover,
+.about-gallery .btn:hover {
+  background: #ff0a16;
+  transform: scale(1.05);
+}
+
+.fa-solid {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* "Find Us" button */
+.find-us-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  border-radius: 25px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-15px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-8px);
+  }
+}
+
+/* CINEMA-INFO SECTION */
+.cinema-info {
+  background: linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%);
+  padding: 3rem 2rem;
+  color: #fff;
+  position: relative;
+}
+
+.cinema-info .container {
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid #e50914;
+  border-radius: 10px;
+  box-shadow:
+    0 0 10px #e50914,
+    0 0 20px #e50914;
+  padding: 2rem;
+}
+
+.futuristic-heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+  color: #fff;
+}
+
+.futuristic-heading::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #e50914;
+  margin: 0.5rem auto 0 auto;
+}
+
+.futuristic-subheading {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+/* About gallery images */
+.about-gallery {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  gap: 60px;
+}
+
+.about-gallery-two {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  gap: 60px;
+}
+
+.about-gallery img {
+  width: 585px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.about-gallery-poster img {
+  width: 385px;
+  height: 575px;
+  border-radius: 16px;
+  object-fit: cover;
+  justify-content: space-between;
+}
+
+.location-info p,
+.location-p-text {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+/* MAP STYLES */
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 400px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none!important;
+  width: 100%;
+  height: 400px;
+}
+.gmap_iframe {
+  height: 400px!important;
+}
+
+
+/* FOOTER */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 1200px) {
+  .who-we-are-btn,
+  .find-us-btn,
+  .latest-movies-btn {
+    padding: 6px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    height: auto; 
+    padding-bottom: 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+    padding-top: 150px;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .about-gallery,
+  .about-gallery-two {
+    gap: 1rem; 
+  }
+
+  .about-gallery img {
+    width: 80%;
+  }
+  .about-gallery-poster img {
+    width: 60%;
+    height: auto;
+  }
+
+  .gmap_canvas {
+    height: 350px; 
+  }
+  .gmap_iframe {
+    height: 350px!important;
+  }
+  .find-us-btn,
+  .who-we-are-btn,
+  .latest-movies-btn {
+    display: none;
+    margin: 1rem auto;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .hero {
+    height: auto;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .find-us-btn,
+  .who-we-are-btn,
+  .latest-movies-btn {
+    bottom: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .about-gallery img {
+    width: 90%;
+    max-width: 280px;
+  }
+  .about-gallery-poster img {
+    width: 250px; 
+    height: auto; 
+  }
+
+  .futuristic-heading {
+    font-size: 1.6rem;
+  }
+
+  .futuristic-subheading {
+    font-size: 1.2rem;
+  }
+
+  .gmap_canvas {
+    height: 300px;
+  }
+  .gmap_iframe {
+    height: 300px!important;
+  }
+
+  .find-us-btn,
+  .who-we-are-btn,
+  .latest-movies-btn {
+    display: none;
+    margin: 1rem auto;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+    padding-top: 180px;
+  }
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .find-us-btn,
+  .who-we-are-btn,
+  .latest-movies-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    bottom: 1rem;
+  }
+
+  .about-gallery img,
+  .about-gallery-poster img {
+    width: 80%;
+    max-width: 250px; 
+  }
+
+  .gmap_canvas {
+    height: 250px;
+  }
+
+  .gmap_iframe {
+    height: 250px!important;
+  }
+
+  .futuristic-heading {
+    font-size: 1.4rem;
+  }
+
+  .futuristic-subheading {
+    font-size: 1rem;
+  }
+
+  .find-us-btn,
+  .who-we-are-btn,
+  .latest-movies-btn {
+    display: none;
+  }
+}
